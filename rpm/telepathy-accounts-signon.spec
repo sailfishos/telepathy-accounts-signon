@@ -6,6 +6,7 @@ Group: System/Libraries
 License: GPLv2
 URL: https://github.com/nemomobile/telepathy-accounts-signon
 Source0: %{name}-%{version}.tar.bz2
+Source1: %{name}.privileges
 
 BuildRequires: qt5-qmake
 BuildRequires: pkgconfig(glib-2.0)
@@ -26,6 +27,7 @@ Requires: mapplauncherd
 %{_libexecdir}/telepathy-sasl-signon
 %{_datadir}/dbus-1/services/org.freedesktop.Telepathy.Client.SaslSignonAuth.service
 %{_datadir}/telepathy/clients/SaslSignonAuth.client
+%{_datadir}/mapplauncherd/privileges.d/*
 %{_libdir}/mission-control-plugins.0/mcp-account-manager-uoa.so
 
 %prep
@@ -39,3 +41,5 @@ make %{?jobs:-j%jobs}
 rm -rf %{buildroot}
 %make_install
 
+mkdir -p %{buildroot}%{_datadir}/mapplauncherd/privileges.d
+install -m 644 -p %{SOURCE1} %{buildroot}%{_datadir}/mapplauncherd/privileges.d/
