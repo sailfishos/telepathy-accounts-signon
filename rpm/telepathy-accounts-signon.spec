@@ -35,7 +35,7 @@ Requires: mapplauncherd
 
 %build
 %qmake5
-make %{?jobs:-j%jobs}
+make %{?_smp_mflags}
 
 %install
 rm -rf %{buildroot}
