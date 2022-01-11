@@ -1,10 +1,9 @@
 Name: telepathy-accounts-signon
-Version: 0.1.27
-Release: 2
+Version: 0.1.28
+Release: 1
 Summary: Telepathy providers for libaccounts/libsignon
-Group: System/Libraries
-License: GPLv2
-URL: https://github.com/nemomobile/telepathy-accounts-signon
+License: GPLv2+ and LGPLv2+
+URL: https://github.com/sailfishos/telepathy-accounts-signon
 Source0: %{name}-%{version}.tar.bz2
 Source1: %{name}.privileges
 
@@ -24,6 +23,7 @@ Requires: mapplauncherd
 
 %files
 %defattr(-,root,root,-)
+%license COPYING COPYING.LGPL
 %{_libexecdir}/telepathy-sasl-signon
 %{_datadir}/dbus-1/services/org.freedesktop.Telepathy.Client.SaslSignonAuth.service
 %{_datadir}/telepathy/clients/SaslSignonAuth.client
@@ -38,7 +38,6 @@ Requires: mapplauncherd
 make %{?_smp_mflags}
 
 %install
-rm -rf %{buildroot}
 %make_install
 
 mkdir -p %{buildroot}%{_datadir}/mapplauncherd/privileges.d
