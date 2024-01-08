@@ -35,10 +35,10 @@ Requires: mapplauncherd
 
 %build
 %qmake5
-make %{?_smp_mflags}
+%make_build
 
 %install
-%make_install
+%qmake5_install
 
 mkdir -p %{buildroot}%{_datadir}/mapplauncherd/privileges.d
 install -m 644 -p %{SOURCE1} %{buildroot}%{_datadir}/mapplauncherd/privileges.d/
