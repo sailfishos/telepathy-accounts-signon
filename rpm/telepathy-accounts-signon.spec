@@ -1,5 +1,5 @@
 Name: telepathy-accounts-signon
-Version: 0.1.28
+Version: 0.1.29
 Release: 1
 Summary: Telepathy providers for libaccounts/libsignon
 License: GPLv2+ and LGPLv2+
