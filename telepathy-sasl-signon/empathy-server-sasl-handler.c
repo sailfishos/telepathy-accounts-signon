@@ -22,8 +22,8 @@
 #include <string.h>
 
 #include "empathy-debug.h"
-//#include "empathy-keyring.h"
-//#include "empathy-sasl-mechanisms.h"
+#include "empathy-keyring.h"
+#include "empathy-sasl-mechanisms.h"
 
 enum {
   PROP_CHANNEL = 1,

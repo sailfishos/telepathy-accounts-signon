@@ -599,7 +599,7 @@ empathy_auth_factory_constructor (GType type,
 
   if (auth_factory_singleton != NULL)
     {
-      retval = g_object_ref (auth_factory_singleton);
+      retval = g_object_ref (G_OBJECT (auth_factory_singleton));
     }
   else
     {
