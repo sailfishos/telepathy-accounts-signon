@@ -21,7 +21,7 @@
 #ifndef __EMPATHY_UOA_UTILS_H__
 #define __EMPATHY_UOA_UTILS_H__
 
-#include <libaccounts-glib/ag-manager.h>
+#include <libaccounts-glib/libaccounts-glib.h>
 
 #define EMPATHY_UOA_SERVICE_TYPE "IM"
 

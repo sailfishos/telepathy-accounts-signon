@@ -4,7 +4,7 @@
 
 #include <telepathy-glib/telepathy-glib.h>
 
-#include <libaccounts-glib/ag-account.h>
+#include <libaccounts-glib/libaccounts-glib.h>
 
 #include "empathy-webcredentials-monitor.h"
 

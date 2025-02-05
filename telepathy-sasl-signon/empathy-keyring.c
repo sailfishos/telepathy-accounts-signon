@@ -22,11 +22,7 @@
 
 #include <string.h>
 
-#include <libaccounts-glib/ag-account.h>
-#include <libaccounts-glib/ag-account-service.h>
-#include <libaccounts-glib/ag-auth-data.h>
-#include <libaccounts-glib/ag-manager.h>
-#include <libaccounts-glib/ag-service.h>
+#include <libaccounts-glib/libaccounts-glib.h>
 #include <libsignon-glib/signon-identity.h>
 #include "empathy-uoa-utils.h"
 
