@@ -23,12 +23,7 @@
 
 #include <telepathy-glib/telepathy-glib.h>
 
-#include <libaccounts-glib/ag-account.h>
-#include <libaccounts-glib/ag-account-service.h>
-#include <libaccounts-glib/ag-manager.h>
-#include <libaccounts-glib/ag-service.h>
-#include <libaccounts-glib/ag-auth-data.h>
-#include <libaccounts-glib/ag-provider.h>
+#include <libaccounts-glib/libaccounts-glib.h>
 
 #include <libsignon-glib/signon-identity.h>
 
@@ -890,7 +885,7 @@ account_manager_uoa_ready (const McpAccountStorage *storage,
   DEBUG (G_STRFUNC);
 
   self->priv->ready = TRUE;
-  self->priv->am = g_object_ref (G_OBJECT (am));
+  self->priv->am = MCP_ACCOUNT_MANAGER (g_object_ref (G_OBJECT (am)));
 
   while ((data = g_queue_pop_head (self->priv->pending_signals)) != NULL)
     {

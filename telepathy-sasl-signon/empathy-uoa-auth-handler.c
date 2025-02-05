@@ -18,11 +18,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-#include <libaccounts-glib/ag-account.h>
-#include <libaccounts-glib/ag-account-service.h>
-#include <libaccounts-glib/ag-auth-data.h>
-#include <libaccounts-glib/ag-manager.h>
-#include <libaccounts-glib/ag-service.h>
+#include <libaccounts-glib/libaccounts-glib.h>
 
 #include <libsignon-glib/signon-identity.h>
 #include <libsignon-glib/signon-auth-session.h>

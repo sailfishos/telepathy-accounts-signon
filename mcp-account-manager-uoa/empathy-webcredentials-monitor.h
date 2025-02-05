@@ -3,7 +3,7 @@
 
 #include <glib-object.h>
 
-#include <libaccounts-glib/ag-manager.h>
+#include <libaccounts-glib/libaccounts-glib.h>
 
 G_BEGIN_DECLS
 
